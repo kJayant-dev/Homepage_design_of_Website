@@ -1,0 +1,20 @@
+#nav{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 50px;
+    padding: 20px;
+    border-radius: 24px;
+    justify-content: space-around;
+    box-shadow:
+            0 20px 50px rgba(49, 75, 120, 0.18);
+    
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    
+}
+.anch :hover{
+    padding: 8px;
+    background-color:beige;
+    border-radius: 16px ;
+    font-size: 1rem;
+}
