@@ -67,5 +67,8 @@
     
 }
 .webhead{
-    border: 2px solid black;
+    padding: 5px;
+    display: inline;
+    margin: 4px;
+    color: navy;
 }
