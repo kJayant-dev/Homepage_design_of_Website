@@ -1,74 +1,204 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: bisque;
-    color: black;
+/* ---  Style .css------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
 }
-#nav{
-    display: flex;
-    flex-direction: row;
-    
-    margin: 20px;
-    padding: 20px;
-    border-radius: 24px;
-    justify-content: space-around;
-    box-shadow:
-            0 20px 50px rgba(49, 75, 120, 0.18);
-    
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    
+
+body {
+  background-color: bisque;
+  color: black;
 }
-.anch :hover{
-    padding: 8px;
-    background-color:beige;
-    border-radius: 16px ;
-    /* border: 2px solid black; */
-    font-size: 1rem;
-}
+
+/* --- HEADER STYLES --- */
 #first {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
 }
+
 #imgg img {
-    width: 200px;
-    height: 160px;
-    border-radius: 16px;
-    object-fit: contain;
+  width: 200px;
+  height: 160px;
+  border-radius: 16px;
+  object-fit: contain;
 }
+
 #firstheading {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #firstheading h1 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
-#firstheading h2, #firstheading h3 {
-    font-size: 1.3rem;
-    margin-top: 5px;
+#firstheading h2,
+#firstheading h3 {
+  font-size: 1.3rem;
+  margin-top: 5px;
 }
+
+/* --- NAVBAR STYLES --- */
+#nav {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 15px 20px;
+  border-radius: 24px;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 20px 50px rgba(49, 75, 120, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: bisque;
+  position: relative;
+  z-index: 100;
+}
+
+.anch a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 16px;
+  display: inline-block;
+  transition: all 0.2s ease-in-out;
+}
+
+.anch:hover a {
+  background-color: beige;
+  color: navy;
+}
+
+/* --- DROPDOWN LEVEL 1 (Days List) --- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: bisque;
+  min-width: 180px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(49, 75, 120, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 8px 0;
+  z-index: 200;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: beige;
+  color: navy;
+}
+
+.arrow {
+  font-size: 1.1rem;
+  margin-left: 8px;
+}
+
+/* --- DROPDOWN LEVEL 2 (Subject Details Submenu) --- */
+.dropdown-submenu-container {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: bisque;
+  min-width: 320px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(49, 75, 120, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  z-index: 300;
+}
+
+.dropdown-submenu-container:hover > .submenu {
+  display: block;
+}
+
+.subject-card {
+  background-color: beige;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.subject-card:last-child {
+  margin-bottom: 0;
+}
+
+.sub-time {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: navy;
+}
+
+.sub-name {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.sub-faculty {
+  display: block;
+  font-size: 0.82rem;
+  color: #444;
+}
+
+/* --- ABOUT SECTION CONTENT --- */
 .about-title {
-  font-size: 22px;
-  box-shadow:
-            0 20px 50px rgba(49, 75, 120, 0.18);
-    
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    margin: 20px;
-    padding: 20px;
-    border-radius: 24px;
-    
+  font-size: 20px;
+  box-shadow: 0 20px 50px rgba(49, 75, 120, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: bisque;
 }
-.webhead{
-    padding: 5px;
-    display: inline;
-    margin: 4px;
-    color: navy;
+
+.webhead {
+  padding: 5px 0;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: navy;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 6px;
 }

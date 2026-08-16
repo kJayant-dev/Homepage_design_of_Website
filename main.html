@@ -1,81 +1,255 @@
-<!doctype html>
+<!-- main.html -->
+
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Tabs</title>
+    <title>Jayant College of Engineering and Technology</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- HEADER & LOGO SECTION -->
     <div id="first">
-            <div id="imgg">
-                <img src="./jcet.png"   alt="College Logo">
-            </div>
-            <div id="firstheading">
-                <h1>Jayant College of Engineering and Technology</h1>
-                <h2>(HR | Chandigarh)</h2>
-                <h3>Sector 32, Chandigarh 133206</h3>
-            </div>
+      <div id="imgg">
+        <img src="./jcet.png" alt="College Logo" />
+      </div>
+      <div id="firstheading">
+        <h1>Jayant College of Engineering and Technology</h1>
+        <h2>(HR | Chandigarh)</h2>
+        <h3>Sector 32, Chandigarh 133206</h3>
+      </div>
     </div>
 
+    <!-- NAVBAR WITH MULTI-LEVEL DROPDOWN -->
+    <div id="nav">
+      <span class="anch">
+        <a href="#">Home</a>
+      </span>
 
-    <div id="nav" >
-      <span class="anch">
-        <a href="" style="text-decoration: none; color: black">Home</a>
-      </span>
-      <span class="anch">
-        <a href="./aboutme.html" style="text-decoration: none">About Me</a>
-      </span>
-      <span class="anch">
-        <a href="" style="text-decoration: none">Time Table</a>
-      </span>
+      <!-- ABOUT US / ABOUT ME DROPDOWN -->
+      <div class="dropdown">
+        <span class="anch">
+          <a href="#about-section">About Us ▾</a>
+        </span>
+        <div class="dropdown-menu">
+          <a href="#who-we-are" class="dropdown-item">Who Are We?</a>
+          <a href="#vision" class="dropdown-item">Vision</a>
+          <a href="#mission" class="dropdown-item">Mission</a>
+        </div>
+      </div>
+
+      <!-- TIME TABLE DROPDOWN -->
+      <div class="dropdown">
+        <span class="anch">
+          <a href="#">Time Table (3rd Sem) ▾</a>
+        </span>
+        <div class="dropdown-menu">
+          
+          <!-- MONDAY -->
+          <div class="dropdown-submenu-container">
+            <a href="#" class="dropdown-item">Monday <span class="arrow">›</span></a>
+            <div class="submenu">
+              <div class="subject-card">
+                <span class="sub-time">09:30 - 10:30</span>
+                <span class="sub-name">Latest Trends & Tech in CS</span>
+                <span class="sub-faculty">Dr. Amit Chhabra</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">10:30 - 11:30</span>
+                <span class="sub-name">Discrete Structures</span>
+                <span class="sub-faculty">Dr. Ankit Gupta</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">11:30 - 12:30</span>
+                <span class="sub-name">Software Engineering</span>
+                <span class="sub-faculty">Dr. Sunita</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">12:30 - 13:30</span>
+                <span class="sub-name">Data Structures</span>
+                <span class="sub-faculty">Dr. R. B. Patel</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">15:30 - 16:30</span>
+                <span class="sub-name">Practical Labs (Gp 1, 2, 3)</span>
+                <span class="sub-faculty">DS (Rm 401) / DBS (Rm 419) / WT (Rm 407)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TUESDAY -->
+          <div class="dropdown-submenu-container">
+            <a href="#" class="dropdown-item">Tuesday <span class="arrow">›</span></a>
+            <div class="submenu">
+              <div class="subject-card">
+                <span class="sub-time">09:30 - 10:30</span>
+                <span class="sub-name">Web Technologies</span>
+                <span class="sub-faculty">Er. Animesh Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">10:30 - 11:30</span>
+                <span class="sub-name">Discrete Structures</span>
+                <span class="sub-faculty">Dr. Ankit Gupta</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">11:30 - 12:30</span>
+                <span class="sub-name">Latest Trends & Tech in CS</span>
+                <span class="sub-faculty">Dr. Amit Chhabra</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">12:30 - 13:30</span>
+                <span class="sub-name">Database Systems</span>
+                <span class="sub-faculty">Dr. Dheerendra Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">14:30 - 15:30</span>
+                <span class="sub-name">Software Engineering</span>
+                <span class="sub-faculty">Dr. Sunita</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- WEDNESDAY -->
+          <div class="dropdown-submenu-container">
+            <a href="#" class="dropdown-item">Wednesday <span class="arrow">›</span></a>
+            <div class="submenu">
+              <div class="subject-card">
+                <span class="sub-time">09:30 - 10:30</span>
+                <span class="sub-name">Discrete Structures</span>
+                <span class="sub-faculty">Dr. Ankit Gupta</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">10:30 - 11:30</span>
+                <span class="sub-name">Web Technologies</span>
+                <span class="sub-faculty">Er. Animesh Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">11:30 - 12:30</span>
+                <span class="sub-name">Database Systems</span>
+                <span class="sub-faculty">Dr. Dheerendra Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">12:30 - 13:30</span>
+                <span class="sub-name">Data Structures</span>
+                <span class="sub-faculty">Dr. R. B. Patel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- THURSDAY -->
+          <div class="dropdown-submenu-container">
+            <a href="#" class="dropdown-item">Thursday <span class="arrow">›</span></a>
+            <div class="submenu">
+              <div class="subject-card">
+                <span class="sub-time">09:30 - 10:30</span>
+                <span class="sub-name">Data Structures</span>
+                <span class="sub-faculty">Dr. R. B. Patel</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">10:30 - 12:30</span>
+                <span class="sub-name">Practical Labs (Gp 1, 2, 3)</span>
+                <span class="sub-faculty">WT (Rm 407) / DS (Rm 401) / DBS (Rm 419)</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">14:30 - 15:30</span>
+                <span class="sub-name">Database Systems</span>
+                <span class="sub-faculty">Dr. Dheerendra Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">15:30 - 16:30</span>
+                <span class="sub-name">Software Engineering</span>
+                <span class="sub-faculty">Dr. Sunita</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRIDAY -->
+          <div class="dropdown-submenu-container">
+            <a href="#" class="dropdown-item">Friday <span class="arrow">›</span></a>
+            <div class="submenu">
+              <div class="subject-card">
+                <span class="sub-time">09:30 - 10:30</span>
+                <span class="sub-name">Discrete Structures</span>
+                <span class="sub-faculty">Dr. Ankit Gupta</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">10:30 - 11:30</span>
+                <span class="sub-name">Data Structures</span>
+                <span class="sub-faculty">Dr. R. B. Patel</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">11:30 - 12:30</span>
+                <span class="sub-name">Web Technologies</span>
+                <span class="sub-faculty">Er. Animesh Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">12:30 - 13:30</span>
+                <span class="sub-name">Database Systems</span>
+                <span class="sub-faculty">Dr. Dheerendra Singh</span>
+              </div>
+              <div class="subject-card">
+                <span class="sub-time">15:30 - 16:30</span>
+                <span class="sub-name">Practical Labs (Gp 1, 2, 3)</span>
+                <span class="sub-faculty">DBS (Rm 419) / WT (Rm 407) / DS (Rm 401)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <span class="anch">
         <a
           href="./feedback.html"
           target="_blank"
           title="Feedback form for Suggestions"
-          style="text-decoration: none"
           >Feedback</a
         >
       </span>
     </div>
-    <div style="  margin: 30px; padding: 15px">
-      <div class = "about-title">
-        <h2 class = "webhead" >WHO ARE WE?</h2>
+
+    <!-- BODY CONTENT SECTION -->
+    <div id="about-section" style="margin: 30px; padding: 15px">
+      <div id="who-we-are" class="about-title">
+        <h2 class="webhead">WHO ARE WE?</h2>
         <p>
           JCET is well known for its huge infrastructure and state of the art
           facilities. It is also known as Green Campus because it has a unique
           environment friendly & energy efficient building with fabulous
           architecture, lush verdant woods and landscape gardens that provide an
-          idyllic academic environment to our students. CCET offers B.E.
+          idyllic academic environment to our students. JCET offers B.E.
           (Bachelor of Engineering) courses in four streams i.e. Electronics &
           Communication Engineering, Computer Science & Engineering, Mechanical
           Engineering and Civil Engineering.
         </p>
       </div>
-      <div class = "about-title">
-        <h2 class = "webhead" >Vision</h2>
+
+      <div id="vision" class="about-title">
+        <h2 class="webhead">Vision</h2>
         <p>
-          Jayant College of Engineering and Technology aims to be a centre
-          of excellence for imparting technical education and serving the
-          society with self-motivated and highly competent technocrats.
+          Jayant College of Engineering and Technology aims to be a centre of
+          excellence for imparting technical education and serving the society
+          with self-motivated and highly competent technocrats.
         </p>
       </div>
-      <div class = "about-title">
-        <h2 class = "webhead" >Mission</h2>
+
+      <div id="mission" class="about-title">
+        <h2 class="webhead">Mission</h2>
         <p>
-        <ul style="list-style-position: inside;">
+          <ul style="list-style-position: inside;">
             <li>To provide high quality and value-based technical education.</li>
-            <li>To
-          establish a centre of excellence in emerging and cutting-edge
-          technologies by encouraging research and consultancy in collaboration
-          with industry and organizations of repute.</li>
-            <li>To foster a transformative
-          learning environment for technocrats focused on inter-disciplinary
-          knowledge; problem-solving; leadership, communication, and
-          interpersonal skills.</li>
-        </ul>
-           
+            <li>
+              To establish a centre of excellence in emerging and cutting-edge
+              technologies by encouraging research and consultancy in
+              collaboration with industry and organizations of repute.
+            </li>
+            <li>
+              To foster a transformative learning environment for technocrats
+              focused on inter-disciplinary knowledge; problem-solving;
+              leadership, communication, and interpersonal skills.
+            </li>
+          </ul>
         </p>
       </div>
     </div>
